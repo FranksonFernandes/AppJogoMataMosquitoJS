@@ -12,3 +12,13 @@
     width:90px;
     height: 90px;
 }
+
+/*Fazer a imagem do mosquito inverter*/
+.ladoA{
+    transform: scaleX(1);
+}
+
+.ladoB{
+    transform: scaleX(-1);
+}
+/*fim

@@ -22,7 +22,7 @@ var cronometro = setInterval(function(){
     if(tempo < 0){
         clearInterval(cronometro) //Finaliza cronometro quando há vitória
         clearInterval(criaMosquito)//Finaliza criação de mosquito quando há vitória
-        alert('Vitoria!')
+        window.location.href = 'vitoria.html'
     } else{
         document.getElementById('cronometro').innerHTML = tempo
     }
@@ -37,7 +37,7 @@ function posicaoRandomica(){
         document.getElementById('mosquito').remove() //Remove o elemento mosquito
         if(vidas > 3){//Se vidas for maior que 3 jogo termina e usuário perde
             window.location.href = 'fim_de_jogo.html'
-            alert('Game Over')
+            
         
         }else{//Caso vida for menor que 3 variavel vida é incrementada
             document.getElementById('v' + vidas).src="imagens/coracao_vazio.png"
@@ -48,8 +48,6 @@ function posicaoRandomica(){
     }
     
        //fim
-
-
 var posicaoX = Math.floor(Math.random() * largura) -90
 var posicaoY = Math.floor(Math.random() * altura) -90
 

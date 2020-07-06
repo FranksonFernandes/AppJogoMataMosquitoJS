@@ -20,7 +20,7 @@ function posicaoRandomica(){
     if(document.getElementById('mosquito')){
         document.getElementById('mosquito').remove() //Remove o elemento mosquito
         if(vidas > 3){//Se vidas for maior que 3 jogo termina e usuário perde
-            
+            window.location.href = 'fim_de_jogo.html'
             alert('Game Over')
         
         }else{//Caso vida for menor que 3 variavel vida é incrementada
